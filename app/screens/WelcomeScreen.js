@@ -28,13 +28,13 @@ const styles = StyleSheet.create({
   loginButton: {
     width: "100%",
     height: 70,
-    backgroundColor: "#fc5c65",
+    backgroundColor: "#ff00ff",
     justifyContent: "flex-end",
   },
   registerButton: {
     width: " 100%",
     height: 70,
-    backgroundColor: "#4ecdc4",
+    backgroundColor: "#ff3399",
     justifyContent: "flex-end",
   },
   logo: {
@@ -46,7 +46,8 @@ const styles = StyleSheet.create({
   title: {
     flex: 1,
     color: "pink",
-    fontFamily: "Cochin",
+    fontFamily: "Courier",
+    fontStyle: "italic",
     fontSize: 34,
     fontWeight: "bold",
     position: "absolute",
@@ -60,6 +61,7 @@ const styles = StyleSheet.create({
     fontWeight: "100",
     position: "absolute",
     top: 240,
+    textAlign: " right",
   },
 });
 
