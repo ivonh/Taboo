@@ -9,10 +9,7 @@
       "image": "./app/assets/spash.png",
       "resizeMode": "contain",
       "backGroundColor": "#ffffff"
-    },
-    "updates": {
-      "fallbackZToCacheTimeout": 0
-    },
-    "assetBundlePatterns": ["**/*"]
-  }
+    }
+  },
+  "assetBundlePatterns": ["**/*"]
 }
