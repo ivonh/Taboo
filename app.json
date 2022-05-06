@@ -4,18 +4,15 @@
     "slug": "Taboo",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./app/assets/background.jpg",
+    "icon": "./app/assets/icon.png",
     "splash": {
-      "image": "./app/assets/background.jpg",
+      "image": "./app/assets/spash.png",
       "resizeMode": "contain",
       "backGroundColor": "#ffffff"
-
-      },
-      "updates": {
-        "fallbackZToCacheTimeout": 0
-      },
-    "assetBundlePatterns": [
-      "**/*"
-    ]
+    },
+    "updates": {
+      "fallbackZToCacheTimeout": 0
+    },
+    "assetBundlePatterns": ["**/*"]
   }
 }
