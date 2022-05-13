@@ -7,3 +7,6 @@
 1), Collaborative approach to designing 4 UX screens as part of task 1 of this project 
 
 2), Development of Back-end to be done after UXX screens
+
+3), Use npm i to install all packages to run app, this installs all required packages for Application
+BEWARE some items such as we
