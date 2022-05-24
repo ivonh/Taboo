@@ -18,9 +18,11 @@ function ViewImageScreen(props) {
 }
 
 const styles = StyleSheet.create({
-  closeIcon: {
+  login: {
     width: 50,
     height: 50,
+    borderWidth: 10,
+    borderColor: colors.black,
     backgroundColor: colors.primary,
     position: "absolute",
     top: 40,
