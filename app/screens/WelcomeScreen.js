@@ -1,8 +1,16 @@
-import { StyleSheet, ImageBackground, View, Image, Text } from "react-native";
+import {
+  StyleSheet,
+  ImageBackground,
+  View,
+  Image,
+  Text,
+  Button,
+} from "react-native";
 
 import React from "react";
 
-import AppButton from components;
+import AppButton from "../components/AppButton";
+import AppText from "../components/AppText/AppText";
 
 function WelcomeScreen(props) {
   return (
@@ -15,9 +23,7 @@ function WelcomeScreen(props) {
       <Text style={styles.paragraph}>
         100% organic cotton, 100% of net profits eradicating period poverty
       </Text>
-      <View>
-        <AppButton title="login" />
-      </View>
+      <View></View>
       <View style={styles.registerButton} />
     </ImageBackground>
   );
@@ -29,7 +35,6 @@ const styles = StyleSheet.create({
     justifyContent: "flex-end",
     alignItems: "center",
   },
-
   logo: {
     width: 100,
     height: 100,
