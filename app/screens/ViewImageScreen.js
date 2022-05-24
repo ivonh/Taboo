@@ -8,6 +8,7 @@ function ViewImageScreen(props) {
     <View style={styles.container}>
       <View style={styles.closeIcon}></View>
       <View style={styles.deleteIcon}></View>
+      <View style={styles.projectedStartDate}></View>
       <Image
         resizeMode="contain"
         style={styles.image}
@@ -28,6 +29,11 @@ const styles = StyleSheet.create({
     top: 40,
     left: 30,
   },
+  projectedStartDate: {
+    alignContent: "center",
+    top: 40,
+    position: "absolute",
+  },
   container: {
     backgroundColor: colors.black,
     flex: 1,
@@ -39,6 +45,14 @@ const styles = StyleSheet.create({
     position: "absolute",
     top: 40,
     right: 30,
+  },
+  closeIcon: {
+    width: 50,
+    height: 50,
+    backgroundColor: colors.primary,
+    position: "absolute",
+    top: 40,
+    left: 30,
   },
   image: {
     width: "100%",
