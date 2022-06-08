@@ -1,30 +1,23 @@
-import {
-  StyleSheet,
-  ImageBackground,
-  View,
-  Image,
-  Text,
-  Button,
-} from "react-native";
-
 import React from "react";
+import { ImageBackground, StyleSheet, View, Image, Text } from "react-native";
 
-import AppButton from "../components/AppButton";
-import AppText from "../components/AppText/AppText";
+import Button from "../components/Button";
 
 function WelcomeScreen(props) {
   return (
     <ImageBackground
+      blurRadius={10}
       style={styles.background}
-      source={require("../assets/chair.jpg")}
+      source={require("../assets/Chick.webp")}
     >
-      <Image style={styles.logo} source={require("../assets/LOGO.png")} />
-      <Text style={styles.title}>period care that cares</Text>
-      <Text style={styles.paragraph}>
-        100% organic cotton, 100% of net profits eradicating period poverty
-      </Text>
-      <View></View>
-      <View style={styles.registerButton} />
+      <View style={styles.logoContainer}>
+        <Image style={styles.logo} source={require("../assets/LOGO.png")} />
+        <Text style={styles.tagline}>Period Care that Cares</Text>
+      </View>
+      <View style={styles.buttonsContainer}>
+        <Button title="Login" />
+        <Button title="Register" color="secondary" />
+      </View>
     </ImageBackground>
   );
 }
@@ -35,37 +28,23 @@ const styles = StyleSheet.create({
     justifyContent: "flex-end",
     alignItems: "center",
   },
+  buttonsContainer: {
+    padding: 20,
+    width: "100%",
+  },
   logo: {
     width: 100,
     height: 100,
-    position: "absolute",
-    top: 50,
   },
-  registerButton: {
-    width: " 100%",
-    height: 70,
-    backgroundColor: "#ff3399",
-    justifyContent: "flex-end",
-  },
-  title: {
-    flex: 1,
-    color: "pink",
-    fontFamily: "Cochin",
-    fontStyle: "italic",
-    fontSize: 34,
-    fontWeight: "bold",
+  logoContainer: {
     position: "absolute",
-    top: 180,
+    top: 70,
+    alignItems: "center",
   },
-  paragraph: {
-    flex: 1,
-    color: "pink",
-    fontFamily: "Cochin",
-    fontSize: 22,
-    fontWeight: "100",
-    position: "absolute",
-    top: 240,
-    textAlign: "right",
+  tagline: {
+    fontSize: 25,
+    fontWeight: "600",
+    paddingVertical: 20,
   },
 });
 

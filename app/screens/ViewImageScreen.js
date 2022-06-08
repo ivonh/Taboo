@@ -1,58 +1,45 @@
 import React from "react";
 import { Image, StyleSheet, View } from "react-native";
+import { MaterialCommunityIcons } from "@expo/vector-icons";
 
 import colors from "../config/colors";
 
 function ViewImageScreen(props) {
   return (
     <View style={styles.container}>
-      <View style={styles.closeIcon}></View>
-      <View style={styles.deleteIcon}></View>
-      <View style={styles.projectedStartDate}></View>
+      <View style={styles.closeIcon}>
+        <MaterialCommunityIcons name="close" color="white" size={35} />
+      </View>
+      <View style={styles.deleteIcon}>
+        <MaterialCommunityIcons
+          name="trash-can-outline"
+          color="white"
+          size={35}
+        />
+      </View>
       <Image
         resizeMode="contain"
         style={styles.image}
-        source={require("../assets/chair.jpg")}
+        source={require("../assets/Tampon.png")}
       />
     </View>
   );
 }
 
 const styles = StyleSheet.create({
-  login: {
-    width: 50,
-    height: 50,
-    borderWidth: 10,
-    borderColor: colors.black,
-    backgroundColor: colors.primary,
+  closeIcon: {
     position: "absolute",
     top: 40,
     left: 30,
-  },
-  projectedStartDate: {
-    alignContent: "center",
-    top: 40,
-    position: "absolute",
   },
   container: {
     backgroundColor: colors.black,
     flex: 1,
   },
   deleteIcon: {
-    width: 50,
-    height: 50,
-    backgroundColor: colors.secondary,
     position: "absolute",
     top: 40,
     right: 30,
-  },
-  closeIcon: {
-    width: 50,
-    height: 50,
-    backgroundColor: colors.primary,
-    position: "absolute",
-    top: 40,
-    left: 30,
   },
   image: {
     width: "100%",
